@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <div>
+        <p>Sıfırdan İleri Seviye Web Geliştirme</p>
+
+        <img src="./img/batman-v-superman.jpg" width="150px">
+    </div>
+
+    <br><hr><br>
+
+    <button id="slide-up">Slide-Up</button>
+    <button id="slide-down">Slide-Down</button>
+
+    <button id="slide-toggle">Slide-Toggle</button>
+
+    <br><hr><br>
+
+    <button id="fade-in">Fade - in</button>
+    <button id="fade-out">Fade - out</button>
+    <button id="fade-to">Fade - to</button>
+
+    <button id="fade-toggle">Fade - toggle</button>
+
+    <script>
+
+        $(document).ready(function() {
+            $("#slide-up").click(function() {
+                $("div").slideUp(3000);
+            });
+
+            $("#slide-down").click(function() {
+                $("div").slideDown(1500, function() {
+                    alert("Div Gösterildi!");
+                });
+            });
+
+            $("#slide-toggle").click(function() {
+                $("div").slideToggle("slow");
+            });
+
+            $("#fade-in").click(function() {
+                $("div").fadeIn("slow");
+            });
+
+            $("#fade-out").click(function() {
+                $("div").fadeOut(1000, function() {
+                    alert("Div Gizlendi!");
+                });
+            });
+
+            $("#fade-to").click(function() {
+                $("div").fadeTo("fast", .5);
+            });
+
+            $("#fade-toggle").click(function() {
+                $("div").fadeToggle(2000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

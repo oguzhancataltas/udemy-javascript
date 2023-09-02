@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <style>
+        .highlight {
+            background-color: green;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <a href="#">Link 1</a>
+    <h3 id="header">Gezegenler</h3>
+    <ul id="liste">
+        <li>Merkür</li>
+        <li>Venüs</li>
+        <li class="item1">Dünya</li>
+        <li>Mars</li>
+        <li>Jüpiter <a href="#">Güneş Sistemindeki En Büyük Gezegen</a></li>
+        <li>Saturn</li>
+        <li>Uranüs</li>
+        <li>Neptün</li>
+    </ul>
+
+    <img src="./img/batman-v-superman.jpg" width="200" height="auto">
+
+    <input id="name" type="text" placeholder="Adınız ">
+    <input id="lastName" type="text" placeholder="Soyadınız ">
+    <button id="btn-register" onclick="register()">Kayıt Ol</button>
+
+    <script>
+
+        // text değerini alma
+        console.log($("h3").text());
+        // toplu alma
+        console.log($("ul li").text());
+
+        // text değerini değiştirme
+        $("h3").text("Güneş Sistemindeki Gezegenler");
+
+        function register() {
+            var name = $("#name").val();
+            var lastName = $("#lastName").val();
+
+            console.log(name + " " + lastName + " kursa kayıt oldu.");
+
+            // toggleClass ekleme - class yoksa ekler varsa değiştirir.
+            $("#name").toggleClass("highlight");
+            $("#lastName").addClass("orange");
+            $("#lastName").removeClass("orange");
+            $("img").attr("width", "400px");
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

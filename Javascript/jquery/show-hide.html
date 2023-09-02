@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Jquery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+
+<body>
+
+    <p>Sıfırdan İleri Seviye Web Geliştirme</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+
+    <button id="toggle">Toggle</button>
+
+    <script>
+
+        $(document).ready(function(){
+            $("#hide").click(function(){
+                $("p").hide("slow");
+            });
+
+            $("#show").click(function() {
+                $("p").show(1000, function() {
+                    alert("Paragraf Gösterildi!");
+                });
+            });
+
+            $("#toggle").click(function() {
+                $("p").toggle(2000);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
