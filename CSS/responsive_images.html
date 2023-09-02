@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+
+        /* * {
+            box-sizing: border-box;
+        } */
+
+        .kutu {
+            width: 25%;
+            height: auto;
+            background: lightskyblue;
+            float: left;
+            border: 1px solid black;
+        }
+
+        @media screen and (max-width:900px) {
+
+            .kutu {
+                width: 33.33%;
+            }
+
+        }
+
+        @media screen and (max-width:600px) {
+
+            .kutu {
+                width: 50%;
+            }
+
+        }
+
+        @media screen and (max-width:400px) {
+
+            .kutu {
+                width: 100%;
+
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="kutu">
+        <img src="/img/images.jpg" alt="" width="500px
+        ">
+    </div>
+    <div class="kutu">
+        <img src="/img/ikili-yildiz-e1541176406146.jpg" alt="" width="500px
+        ">
+    </div>
+    <div class="kutu">
+        <img src="/img/images.jpg" alt="" width="500px
+        ">
+    </div>
+    <div class="kutu">
+        <img src="/img/ikili-yildiz-e1541176406146.jpg" alt="" width="500px
+        ">
+    </div>
+    <div class="kutu">
+        <img src="/img/images.jpg" alt="" width="500px
+        ">
+    </div>
+
+</body>
+
+</html>

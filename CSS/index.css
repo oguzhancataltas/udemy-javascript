@@ -1,0 +1,91 @@
+/* 
+    Group Selectors
+    (p) --> Tüm p etiketleri
+    (div p) --> div içerisindeki tüm p etiketleri
+    (div,p) --> Tüm div ve tüm p etiketleri
+    (p + div) --> p etiketlerinden sonra gelen div etiketleri
+
+*/
+
+/* p {
+    color: red;
+} */
+/* div p {
+    color: aqua;
+} */
+/* .container {
+    color: blue;
+} */
+/* .container div {
+    color: yellow;
+}
+.container div p {
+    color: chartreuse;
+} */
+/* div,p {
+    color: pink;
+} */
+
+/* p + div {
+    color: darkgreen;
+} */
+
+/* 
+    Attribute Selectors
+*/
+/* h2[title="baslik1"] {
+    color: red;
+}
+p[title="paragraf1"] {
+    color: lightblue;
+    text-align: justify;
+}
+a[target="_blank"] {
+    color: lightgreen;
+}
+input[type="text"] {
+    background-color: rosybrown;
+} */
+
+/* 
+    Pseudo Element
+*/
+/* p::first-line {
+    font-weight: bold;
+    color: darkred;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+p::first-letter {
+    font-size: 50px;
+} */
+
+/* 
+    Pseudo Class
+*/
+/* ul li {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul li:first-child {
+    background-color: darkseagreen;
+}
+ul li:last-child {
+    background-color: deepskyblue;
+}
+a:visited {
+    color: fuchsia;
+}
+a:hover {
+    color: white;
+    background-color: lightblue;
+}
+a {
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    width: 100px;
+    margin-bottom: 10px;
+} */
+
